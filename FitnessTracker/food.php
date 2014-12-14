@@ -9,9 +9,6 @@
 	
 	<body>
 		<?php include_once("header.html"); ?>
-		<br>
-		<br>
-		<br>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-9">

@@ -9,7 +9,6 @@
 	
 	<body>
 		<?php include_once("header.html"); ?>
-		<br>
 		<div class="container">
 			<div class="jumbotron text-center">
 				<h1>Welcome (UserName)! Let's get fit!</h1>
@@ -43,7 +42,4 @@
 				</div>
 			</div>
 		</div>
-		<br>
-		<br>
-		<br>
 		<?php include_once("footer.html"); ?>
