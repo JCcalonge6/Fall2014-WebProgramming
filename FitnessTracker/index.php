@@ -9,8 +9,35 @@
 	
 	<body>
 		<?php include_once("header.html"); ?>
-		<p>write stuff here</p>
-		<p>write stuff here</p>
-		<p>write stuff here</p>
-		<p>write stuff here</p>
+		<br>
+		<div class="container">
+			<div class="jumbotron text-center">
+				<h1>Welcome (UserName)! Let's get fit!</h1>
+				<p>Daily Fitness Tip:</p>
+				<p>**Fitness Tip**</p>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="/view/pics/cooking.jpg" alt="Cooking">
+				</div>
+				
+				<div class="col-md-6">
+					<h3>Remember Reaching Your Fitness Goal is All About Balance</h3>
+					<p>In order to get that rocking body, you must balance
+						the amount of calories you consume with the amount of 
+						calories your body burns. Physical activity 
+						is an important way to use that food energy. So be sure
+						to use both the Food and Exercise features available.
+						If you achieve a good balance you'll reach your goal in no
+						time! And that's a promise!</p>
+				</div>
+				
+				<div class="col-md-3">
+					<img src="/view/pics/exercising.jpg" alt="Exercising">
+				</div>
+			</div>
+		</div>
 		<?php include_once("footer.html"); ?>
