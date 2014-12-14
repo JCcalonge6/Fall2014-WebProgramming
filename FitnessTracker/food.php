@@ -20,6 +20,7 @@
 						
 							<div class="page-header">
 								<h3>What did you eat today?</h3>
+								<p>**Add Feature**</p>
 							</div>
 							
 							

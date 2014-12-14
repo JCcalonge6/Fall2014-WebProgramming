@@ -25,8 +25,9 @@
 					<img src="/view/pics/cooking.png" alt="Cooking">
 				</div>
 				
-				<div class="col-md-6">
-					<h3>Remember Reaching Your Fitness Goal is All About Balance</h3>
+				<div class="col-md-6 text-center">
+					<h3>Don&#39;t Ever Forget!
+						<br>Reaching Your Fitness Goal is All About Balance!</h3>
 					<p>In order to get that rocking body, you must balance
 						the amount of calories you consume with the amount of 
 						calories your body burns. Physical activity 
