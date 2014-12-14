@@ -4,7 +4,7 @@
 		<title>Fitness Tracker Exercise</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="view/css/bootstrap.min.css">
-		<link rel="stylesheet" type="text/css" href="view/css/style.min.css">
+		<link rel="stylesheet" type="text/css" href="view/css/style.css">
 	</head>
 	
 	<body>
