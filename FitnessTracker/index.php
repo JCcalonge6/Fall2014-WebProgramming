@@ -20,8 +20,9 @@
 		
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<img src="/view/pics/cooking.jpg" alt="Cooking">
+				<div class="col-md-3 text-center">
+					<br>
+					<img src="/view/pics/cooking.png" alt="Cooking">
 				</div>
 				
 				<div class="col-md-6">
@@ -35,9 +36,13 @@
 						time! And that's a promise!</p>
 				</div>
 				
-				<div class="col-md-3">
-					<img src="/view/pics/exercising.jpg" alt="Exercising">
+				<div class="col-md-3 text-center">
+					<br>
+					<img src="/view/pics/exercising.png" alt="Exercising">
 				</div>
 			</div>
 		</div>
+		<br>
+		<br>
+		<br>
 		<?php include_once("footer.html"); ?>
