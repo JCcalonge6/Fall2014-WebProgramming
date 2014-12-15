@@ -40,6 +40,21 @@
 							</div>
 							
 							<h3>Exercise Log:</h3>
+							<div class="table-responsive">
+								<table class="table table-striped" id="exerciseTable">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>Reps</th>
+											<th>Workout Time(min)</th>
+											<th>Date</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+										</tr>
+									</tbody>
+								</table>
 						</div>
 					</div>
 				</div>
@@ -52,31 +67,64 @@
 				<div class="modal-content">
 					<form class="form-horizontal">
 						<div class="modal-header">
-							<h4>Input the food information:</h4>
+							<a class="close" data-dismiss="modal">×</a>
+							<h4>Input the Exercise information:</h4>
 						</div>
 					
 						<div class="modal-body">
 							<div class="form-group">
-								<label for="food-name" class="col-lg-3 control-label">Exercise Name: </label>
+								<label for="exercise-name" class="col-lg-3 control-label">Exercise Name: </label>
 								<div class="col-lg-9">
-									<input type="text" class="form-control" id="contact-name" placeholder="example: Push-Ups">
+									<input type="text" class="form-control" id="exercise-name" placeholder="example: Push-Ups">
 								</div>
 							</div>
 							<div class="form-group">
-								<label for="food-calories" class="col-lg-3 control-label">Time (minutes): </label>
+								<label for="exercise-reps" class="col-lg-3 control-label">Reps: </label>
 								<div class="col-lg-9">
-									<input type="number" min="0" class="form-control" id="contact-email" placeholder="30">
+									<input type="number" min="0" class="form-control" id="exercise-reps" placeholder="100">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="exercise-time" class="col-lg-3 control-label">Time (minutes): </label>
+								<div class="col-lg-9">
+									<input type="number" min="0" class="form-control" id="exercise-time" placeholder="30">
 								</div>
 							</div>
 						</div>
 					
 						<div class="modal-footer">
 							<a class="btn btn-danger" data-dismiss="modal">Cancel</a>
-							<button class="btn btn-success" type="submit">Add Exercise</a>
+							<button class="btn btn-success" type="button" onclick="addExercise()">Add Exercise</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 		
+		<script>
+			function addExercise() 
+			{
+				var table = document.getElementById("exerciseTable");
+				var d = new Date();
+				var row = table.insertRow(1);
+				var exercise = row.insertCell(0);
+				var reps = row.insertCell(1);
+				var workout = row.insertCell(2);
+				var time = row.insertCell(3);
+				exercise.innerHTML = document.getElementById("exercise-name").value;
+				reps.innerHTML = document.getElementById("exercise-reps").value;
+				workout.innerHTML = document.getElementById("exercise-time").value;
+				time.innerHTML = d.toDateString();
+				$('#exercise_in').modal('hide');
+				$('#exercise_in').on('hidden.bs.modal', function (e) {
+					$(this)
+					.find("input,textarea,select")
+					.val('')
+					.end()
+					.find("input[type=checkbox], input[type=radio]")
+					.prop("checked", "")
+					.end();
+					})
+			}
+		</script>
 		<?php include_once("footer.html"); ?>
