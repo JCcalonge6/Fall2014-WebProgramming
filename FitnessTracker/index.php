@@ -13,7 +13,7 @@
 			<div class="jumbotron text-center">
 				<h1>Welcome (UserName)! Let's get fit!</h1>
 				<p>Daily Fitness Tip:</p>
-				<p>**Fitness Tip**</p>
+				<p>Did you know? **Fitness Tip**</p>
 			</div>
 		</div>
 		

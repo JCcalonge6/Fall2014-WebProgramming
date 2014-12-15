@@ -19,7 +19,9 @@
 						</a>
 						<a href="#" class="list-group-item">
 							<h4 class="list-group-item-heading">Calorie/Carb/Fat Counter</h4>
-							<p class="list-group-item-text">**Add Feature**</p>
+							<div id="chart">
+								<p>Chart</p>
+							</div>
 							<p class="list-group-item-text">Click for more details</p>
 						</a>
 						<a href="#" class="list-group-item">
@@ -49,10 +51,17 @@
 											<th>Fat (g)</th>
 											<th>Carbs (g)</th>
 											<th>Date</th>
+											<th>Delete</th>
 										</tr>
 									</thead>
 									<tbody>
 										<tr>
+											<td>Popsicle</td>
+											<td>190</td>
+											<td>5</td>
+											<td>1</td>
+											<td>Mon Dec 15 2014</td>
+											<td><button class="btn btn-danger btn-xs" type="button" onclick="delRow()">x</button></td>
 										</tr>
 									</tbody>
 								</table>
@@ -120,6 +129,7 @@
 				var fat = row.insertCell(2);
 				var carb = row.insertCell(3);
 				var time = row.insertCell(4);
+				var del = row.insertCell(5);
 				food.innerHTML = document.getElementById("food-name").value;
 				cal.innerHTML = document.getElementById("food-calories").value;
 				fat.innerHTML = document.getElementById("food-fat").value;
@@ -135,6 +145,12 @@
 					.prop("checked", "")
 					.end();
 					})
+			}
+			function delRow()
+			{
+				var current = window.event.srcElement;
+				while ( (current = current.parentElement)  && current.tagName !="TR");
+				current.parentElement.removeChild(current);
 			}
 		</script>
 		<?php include_once("footer.html"); ?>

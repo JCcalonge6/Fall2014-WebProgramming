@@ -16,7 +16,7 @@
 					<img src="view/pics/computer.png" alt="Computer">
 				</div>
 				
-				<div class="col-lg-9 col-lg-pull-3">
+				<div class="col-lg-8 col-lg-pull-3">
 					<div class="panel panel-default">
 						<div class="panel-body">
 						
