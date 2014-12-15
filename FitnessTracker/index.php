@@ -21,7 +21,7 @@
 			<div class="row">
 				<div class="col-md-3 text-center">
 					<br>
-					<img src="/view/pics/cooking.png" alt="Cooking">
+					<img src="view/pics/cooking.png" alt="Cooking">
 				</div>
 				
 				<div class="col-md-6 text-center">
@@ -38,7 +38,7 @@
 				
 				<div class="col-md-3 text-center">
 					<br>
-					<img src="/view/pics/exercising.png" alt="Exercising">
+					<img src="view/pics/exercising.png" alt="Exercising">
 				</div>
 			</div>
 		</div>
